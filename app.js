@@ -1,22 +1,18 @@
 const app = Vue.createApp({
    data() {
       return {
-         boxASelected: false,
-         boxBSelected: false,
-         boxCSelected: false,
+         enteredValue:'',
+         goals: [],
       }
    },
    methods: {
-      boxSelected(box) {
-         if (box === 'A') {
-            this.boxASelected = !this.boxASelected;
-         } else if (box === 'B') {
-            this.boxBSelected = !this.boxBSelected;
-         } else if (box === 'C') {
-            this.boxCSelected = !this.boxCSelected;
-         }
+      addGoal() {
+         this.goals.push(this.enteredValue);
+         this.enteredValue=''
       },
-      
+      removeItem(index) {
+         this.list.splice(index, 1);
+      }
    },
 })
 app.mount('#app');

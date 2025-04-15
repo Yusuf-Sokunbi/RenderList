@@ -20,12 +20,12 @@
          <h2 class="text-3xl text-[#3EB489] ">My course goals</h2>
          <hr class="mt-3 w-[90%] mx-auto text-red-500 text-md">
          <div class="my-5">
-          <input type="text" class="border-[#ccc] border-1">
-         <button class="bg-green-700 text-white px-2">Add Goals</button>
+          <input type="text" class="border-[#ccc] border-1" v-model="enteredValue">
+         <button @click="addGoal" class="bg-green-700 text-white px-2">Add Goals</button>
          </div>
-         <p>No  goals have been added yet - please start adding some!</p>
-         <ul>
-          <li class="rounded-2xl bg-green-500 text-xl w-[90%] mx-auto">Goal</li>
+         <p v-if="goals.length === 0">No  goals have been added yet - please start adding some!</p>
+         <ul class="">
+          <li  v-for="goal in goals" class="text-xl rounded-2xl bg-green-500 w-[90%] mx-auto my-3">{{goal}}</li>
          </ul>
         </section>
     </header>
