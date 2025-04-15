@@ -3,6 +3,8 @@ const app = Vue.createApp({
       return {
          enteredValue:'',
          goals: [],
+         items:{name:'adeola', age: 23, location: 'lagos'},
+         nums:30
       }
    },
    methods: {
@@ -10,8 +12,8 @@ const app = Vue.createApp({
          this.goals.push(this.enteredValue);
          this.enteredValue=''
       },
-      removeItem(index) {
-         this.list.splice(index, 1);
+      removeGoal(index) {
+         this.goals.splice(index, 1);
       }
    },
 })
