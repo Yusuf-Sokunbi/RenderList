@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline_Style</title>
+    <title>Health Game</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <style type="text/tailwindcss">
       @theme {
@@ -17,26 +17,7 @@
          bg-[#3EB489] px-10 py-10 text-4xl 
          justify-center text-white"">Vue Course Goals</h1>
          <section class="mx-auto border-2 mt-4 rounded-md py-4 border-[red] shadow-xl" id="app">
-         <h2 class="text-3xl text-[#3EB489] ">My course goals</h2>
-         <hr class="mt-3 w-[90%] mx-auto text-red-500 text-md">
-         <div class="my-5">
-          <input type="text" class="border-[#ccc] border-1" v-model="enteredValue">
-         <button @click="addGoal" class="bg-green-700 text-white px-2">Add Goals</button>
-         </div>
-         <p v-if="goals.length === 0">No  goals have been added yet - please start adding some!</p>
-         <ul v-else>
-          <li  v-for="(goal, index) in goals"  @click="removeGoal(index)" class="text-xl 
-          rounded-2xl font-bold bg-green-500 w-[90%] mx-auto my-3">
-          <p>{{goal}} - {{index}}</p>
-          <input type="text" class="border-[#ccc] border-2 my-2 w-[80%] mx-auto" @click.stop placeholder="Edit Goal">
-        </li>
-         </ul>
-         <!-- <ul >
-          <li  v-for="(value, key) in items" class="text-xl rounded-2xl font-bold bg-green-500 w-[90%] mx-auto my-3">{{value}} - {{key}}</li>
-         </ul>
-         <ul>
-          <li v-for="num in nums">{{num}}</li>
-        </ul> -->
+        
         </section>
     </header>
   
