@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline_Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style> -->
+</head>
+<body   class="w-[70%]  mx-auto text-center">
+    <header>
+        <h1 class=" rounded-md m-1
+         bg-[#3EB489] px-10 py-10 text-4xl 
+         justify-center text-white"">Vue Course Goals</h1>
+         <section class="mx-auto border-1 mt-4 rounded-md py-4" id="app">
+         <h2 class="text-3xl text-[#3EB489] ">My course goals</h2>
+         <hr class="mt-3 w-[90%] mx-auto text-red-500 text-md">
+         <div class="my-5">
+          <input type="text" class="border-[#ccc] border-1">
+         <button class="bg-green-700 text-white px-2">Add Goals</button>
+         </div>
+         <p>No  goals have been added yet - please start adding some!</p>
+         <ul>
+          <li class="rounded-2xl bg-green-500 text-xl w-[90%] mx-auto">Goal</li>
+         </ul>
+        </section>
+    </header>
+  
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
